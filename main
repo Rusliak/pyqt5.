@@ -1,0 +1,32 @@
+from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QApplication, QMainWindow
+
+import sys
+
+def runButton():
+    print('У меня у самого нет')
+
+
+def mainApp(self):
+    app = QApplication(sys.argv)
+    windows = QMainWindow()
+
+    windows.setWindowTitle('ЛКЧ')
+    windows.setGeometry(500, 100, 1000, 800)
+
+
+    lol = QtWidgets.QLabel(windows)
+    lol.setText('Хочешь Чебурек?')
+    lol.move(450, 200)
+
+    kek = QtWidgets.QPushButton(windows)
+    kek.move(450, 170)
+    kek.setText('Получить')
+    kek.setFixedWidth(300)
+    self.runButton.clicked.connect(self.runButton)
+
+    windows.show()
+    sys.exit(app.exec_())
+
+runButton()
+mainApp()
